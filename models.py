@@ -14,7 +14,7 @@ from features import Spectrogram, MelSpectrogram, Cochleagram
 FEATURES = {
     "spectrogram": Spectrogram,
     "mel_spectrogram": MelSpectrogram,
-    "cochleagram": Cochleagram
+# "cochleagram": Cochleagram
 }
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
