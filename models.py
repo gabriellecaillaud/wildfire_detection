@@ -7,13 +7,14 @@ from urllib.parse import urlencode
 
 from classifiers.nn_utils import SequentialSaveableModel, SaveableModel
 from datasets import TrainValidTestDataLoader
-from features import Spectrogram, MelSpectrogram, Cochleagram
-
+from features import Spectrogram, MelSpectrogram, AstEncoder
 
 
 FEATURES = {
     "spectrogram": Spectrogram,
     "mel_spectrogram": MelSpectrogram,
+    "audio_spectrogram_transformers" : AstEncoder,
+
 # "cochleagram": Cochleagram
 }
 
